@@ -7,7 +7,6 @@ name = "b2f"
 version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",
- "litcrypt",
  "wasm-bindgen",
 ]
 
@@ -31,16 +30,6 @@ checksum = "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc"
 dependencies = [
  "cfg-if",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "litcrypt"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5f82f92066d9d41b3a569b459b7874e67feb835507a83b7bd142ea9f56c620c7"
-dependencies = [
- "proc-macro2",
- "quote",
 ]
 
 [[package]]
