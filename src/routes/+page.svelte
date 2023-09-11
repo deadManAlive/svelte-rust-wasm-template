@@ -1,5 +1,12 @@
 <script lang="ts">
-    import { greet } from 'b2f';
+    import init, { greet } from 'b2f';
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        init().then(() => {
+            greet("root");
+        });
+    });
 </script>
 
 <h1>Welcome to SvelteKit</h1>
