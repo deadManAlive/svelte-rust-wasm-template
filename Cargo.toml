@@ -3,5 +3,16 @@ name = "b2f"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
 [dependencies]
+console_error_panic_hook = { version = "0.1.7", optional = true }
 litcrypt = "0.3.0"
+wasm-bindgen = "0.2.87"
+
+[profile.release]
+opt-level = "s"
